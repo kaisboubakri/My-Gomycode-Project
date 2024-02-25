@@ -32,7 +32,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "http://localhost:8080/user/login/",
+        "https://my-gomycode-project.onrender.com/user/login/",
         data,
         config
       );
@@ -60,7 +60,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "http://localhost:8080/user/register/",
+        "https://my-gomycode-project.onrender.com/user/register/",
         data,
         config
       );
