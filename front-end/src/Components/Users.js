@@ -39,7 +39,7 @@ function Users() {
       setUsers(data.data);
       // setRefresh(!refresh);
     });
-  }, [refresh]);
+  }, [refresh, userData.data.token]);
 
   return (
     <AnimatePresence>
@@ -56,6 +56,7 @@ function Users() {
           <img
             src={logo}
             style={{ height: "2rem", width: "2rem", marginLeft: "10px" }}
+            alt="logo"
           />
           <p className={"ug-title" + (lightTheme ? "" : " dark")}>
             Available Users

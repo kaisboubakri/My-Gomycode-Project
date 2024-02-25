@@ -41,7 +41,7 @@ function Groups() {
         console.log("Group Data from API ", response.data);
         SetGroups(response.data);
       });
-  }, [refresh]);
+  }, [refresh, user.token]);
 
   return (
     <AnimatePresence>
@@ -59,6 +59,7 @@ function Groups() {
           <img
             src={logo}
             style={{ height: "2rem", width: "2rem", marginLeft: "10px" }}
+            alt="logo"
           />
           <p className={"ug-title" + (lightTheme ? "" : " dark")}>
             Available Groups

@@ -12,7 +12,6 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../Features/themeSlice";
 import axios from "axios";
-import { refreshSidebarFun } from "../Features/refreshSidebar";
 import { myContext } from "./MainContainer";
 
 function Sidebar() {
@@ -46,7 +45,7 @@ function Sidebar() {
       setConversations(response.data);
       // setRefresh(!refresh);
     });
-  }, [refresh]);
+  }, [refresh, user.token]);
 
   return (
     <div className="sidebar-container">
