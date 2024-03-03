@@ -10,8 +10,8 @@
   
   .main-container {
     background-color: #f4f5f8;
-    height: 90vh;
-    width: 90vw;
+    height: 98vh;
+    width: 98vw;
     display: flex;
     border-radius: 20px;
   }
@@ -267,8 +267,8 @@
   }
   
   .login-container {
-    height: 90vh;
-    width: 90vw;
+    height: 98vh;
+    width: 98vw;
     background-color: #f4f5f8;
     border-radius: 20px;
     display: flex;
